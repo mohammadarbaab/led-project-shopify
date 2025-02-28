@@ -1,0 +1,111 @@
+
+    {% section 'announcement-bar' %}
+ 
+header
+ 
+<!-- Corrected the section name -->
+ 
+  <!-- Corrected spelling here as well -->
+ 
+<!-- Corrected spelling here -->
+ 
+<section>
+  <h1>Announcement Bar</h1>
+</section>
+
+{% schema %}
+{
+  "name": "Announcement Bar"
+  "settings": [],
+  "presets": [
+    {
+      "name": "Announcement Bar"
+    }
+  ]
+}
+{% endschema %}
+
+ 
+<!-- Corrected spelling here -->
+ 
+<!-- Corrected spelling here as well -->
+ 
+<section>
+    <h1>Announsment bar</h1>
+  </section>
+  
+  {% schema %}
+  {
+    "name": "Announcment Bar",
+    "settings": [],
+    "presets": [
+      {
+        "name": "announsment ba"
+      }
+    ]
+  }
+  {% endschema %}
+  
+ 
+<html>
+  <head>
+    {{ content_for_header }}
+  </head>
+  <body>
+    {% section 'announcement-bar' %}
+    <main id="main" role="main">
+      {{ content_for_layout }}
+    </main>
+  </body>
+</html>
+
+ 
+announsment-bar
+ 
+<section></section>
+ 
+announsment-bar
+ 
+{
+  "sections": {
+    "banner": {
+      "type": "banner",
+      "settings": {}
+    }
+  },
+  "order": ["banner"]
+}
+ 
+
+        "settings": {
+        }
+ 
+
+    "tag": "section",
+    "class": "",
+ 
+
+        "settings": {
+        }
+ 
+
+    "class": "",
+ 
+
+    "tag": "section",
+ 
+[
+        {
+            "banner":{
+                "type":"banner",
+                "settings":{}
+            }
+        }
+    ]
+ 
+[
+                    {
+                        
+                    }
+                ]
+ 
