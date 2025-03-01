@@ -1,12 +1,20 @@
-<<<<<<< HEAD
-<section>
-  <h1>hellow world</h1>
-</section>
+{% if section.settings['title'] %}
+  <section>
+    <h1>hello world 2</h1>
+  </section>
+{% endif %}
 
 {% schema %}
 {
   "name": "banner",
-  "settings": [],
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "hello"
+    }
+  ],
   "presets": [
     {
       "name": "banner"
@@ -14,20 +22,3 @@
   ]
 }
 {% endschema %}
-=======
-<section>
-  <h1>Hello world</h1>
-</section>
-
-{% schema %}
-{
-  "name": "banner",
-  "settings": [],
-  "presets": [
-    {
-      "name": "banner"
-    }
-  ]
-}
-{% endschema %}
->>>>>>> 2e0bda9a50db3338627ee5a4ebae977b5a35ee86
