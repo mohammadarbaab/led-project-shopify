@@ -1,4 +1,18 @@
 
+      slideToMiddle(currentIndex);
+ 
+texts[currentIndex]
+ 
+
+{% endif %}
+ 
+{% if section.settings['title'] %}
+ 
+banner
+ 
+banner
+ 
+
 </header>
  
 
