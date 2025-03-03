@@ -1,3 +1,33 @@
+
+</header>
+ 
+
+  align-items: center;
+ 
+right-nav-items
+ 
+
+  align-items: center;
+ 
+
+  align-items: center;
+ 
+
+  padding-left: 20px;
+ 
+red
+ 
+
+    padding: 10px;
+    list-style-type: none;
+ 
+url
+ 
+alt=""
+ 
+
+        <img src={{  }} alt=""/>
+ 
 This is the header
  
 

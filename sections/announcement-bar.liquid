@@ -1,20 +1,19 @@
 {% if section.settings['show-announcement'] %}
   <section>
     <div class="announcement-bar">
-      <div class="announcement-bar-left section">
+      <div class="announcement-bar-left-section">
         {% if section.settings.image != blank %}
           <img width="40" height="40" loading="lazy" src="{{ section.settings.image | image_url }}">
         {% else %}
-          <img width="40" height="40" loading="lazy" src="{{ 'nikeLogo.png' | asset_url }}">
+          <img width="40" height="40" loading="lazy" src="{{ 'nikeMan.png' | asset_url }}">
         {% endif %}
-
         {% if section.settings.image2 != blank %}
           <img width="40" height="40" loading="lazy" src="{{ section.settings.image2 | image_url }}">
         {% else %}
-          <img width="40" height="40" loading="lazy" src="{{ 'nikeLogo2.png' | asset_url }}">
+          <img width="40" height="40" loading="lazy" src="{{ 'nikeStar.png' | asset_url }}">
         {% endif %}
       </div>
-      <div class="announcement-bar-right section">
+      <div class="announcement-bar-right-section">
         <ul class="announcement-bar-inner-list">
           {% if section.blocks.size == 0 %}
             <li>
