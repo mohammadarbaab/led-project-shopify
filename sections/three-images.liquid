@@ -21,63 +21,60 @@
     {% endif %}
 
     {% if section.settings.image3 != blank %}
-        <div class="three-user">
-          <h1></h1>
-        </div>
-      {% else %}
-        <div class="three">
-          <h1></h1>
-        </div>
-      {% endif %}
+      <div class="three-user">
+        <h1></h1>
+      </div>
+    {% else %}
+      <div class="three">
+        <h1></h1>
+      </div>
+    {% endif %}
   </div>
 </section>
 
-
 <style>
+  .three-images-wrapper {
+      display: flex;
+    }
 
-    .three-images-wrapper {
-        display: flex;
-      }
-      
-      .one {
-        background-image: url("{{'img1.jpg' | asset_url}}");
-        width: 33.3333%;
-        height: 500px;
-        background-size: cover;
-      }
-      .one-user {
-        background-image: url("{{section.settings.image | asset_url}}");
-        width: 33.3333%;
-        height: 500px;
-        background-size: cover;
-      }
+    .one {
+      background-image: url("{{'img1.jpg' | asset_url}}");
+      width: 33.3333%;
+      height: 500px;
+      background-size: cover;
+    }
+    .one-user {
+      background-image: url("{{section.settings.image | asset_url}}");
+      width: 33.3333%;
+      height: 500px;
+      background-size: cover;
+    }
 
-      .two {
-        background-image: url("{{'img2.jpg' | asset_url}}");
-        width: 33.3333%;
-        height: 500px;
-        background-size: cover;
-      }
-      .two-user {
-        background-image: url("{{section.settings.image | asset_url}}");
-        width: 33.3333%;
-        height: 500px;
-        background-size: cover;
-      }
+    .two {
+      background-image: url("{{'img2.jpg' | asset_url}}");
+      width: 33.3333%;
+      height: 500px;
+      background-size: cover;
+    }
+    .two-user {
+      background-image: url("{{section.settings.image2 | asset_url}}");
+      width: 33.3333%;
+      height: 500px;
+      background-size: cover;
+    }
 
-      .three {
-        background-image: url("{{'img3.jpg' | asset_url}}");
-        width: 33.3333%;
-        height: 500px;
-        background-size: cover;
-      }
-      .three-user {
-        background-image: url("{{section.settings.image | asset_url}}");
-        width: 33.3333%;
-        height: 500px;
-        background-size: cover;
-      }
-    
+    .three {
+      background-image: url("{{'img3.jpg' | asset_url}}");
+      width: 33.3333%;
+      height: 500px;
+      background-size: cover;
+    }
+    .three-user {
+      background-image: url("{{section.settings.image3 | asset_url}}");
+      width: 33.3333%;
+      height: 500px;
+      background-size: cover;
+    }
 </style>
 
 {% schema %}

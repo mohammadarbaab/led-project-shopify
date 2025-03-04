@@ -7,7 +7,44 @@
 {% schema %}
 {
   "name": "Navbar",
-  "settings": [],
-  "presets": []
+  "settings": [
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background Color",
+      "default": "#F4F4F4"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#000000"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Links",
+      "type": "Links",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "link"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "LINK"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Announcement Bar"
+    }
+  ]
 }
 {% endschema %}

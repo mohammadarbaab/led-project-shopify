@@ -1,4 +1,43 @@
 
+    background-color: white;
+ 
+
+    {
+      "type": "image_picker",
+      "id": "image2",
+      "label": "pick image"
+    },
+ 
+
+    {% comment %} {
+      "type": "image_picker",
+      "id": "image",
+      "label": "pick image"
+    }, {% endcomment %}
+ 
+{
+      "type": "checkbox",
+      "id": "",
+      "label": "Show Announcement Bar",
+      "default": true
+    },
+ 
+
+{% schema %}
+{
+  "name": "Navbar",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Header",
+    }
+  ]
+}
+{% endschema %}
+ 
+ <h1></h1>
+ 
+
       "settings": {}
  
 
