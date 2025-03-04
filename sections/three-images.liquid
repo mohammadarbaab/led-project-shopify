@@ -1,0 +1,119 @@
+<section>
+  <div class="three-images-wrapper">
+    {% if section.settings.image != blank %}
+      <div class="one-user">
+        <h1></h1>
+      </div>
+    {% else %}
+      <div class="one">
+        <h1></h1>
+      </div>
+    {% endif %}
+
+    {% if section.settings.image2 != blank %}
+      <div class="two-user">
+        <h1></h1>
+      </div>
+    {% else %}
+      <div class="two">
+        <h1></h1>
+      </div>
+    {% endif %}
+
+    {% if section.settings.image3 != blank %}
+        <div class="three-user">
+          <h1></h1>
+        </div>
+      {% else %}
+        <div class="three">
+          <h1></h1>
+        </div>
+      {% endif %}
+  </div>
+</section>
+
+
+<style>
+
+    .three-images-wrapper {
+        display: flex;
+      }
+      
+      .one {
+        background-image: url("{{'img1.jpg' | asset_url}}");
+        width: 33.3333%;
+        height: 500px;
+        background-size: cover;
+      }
+      .one-user {
+        background-image: url("{{section.settings.image | asset_url}}");
+        width: 33.3333%;
+        height: 500px;
+        background-size: cover;
+      }
+
+      .two {
+        background-image: url("{{'img2.jpg' | asset_url}}");
+        width: 33.3333%;
+        height: 500px;
+        background-size: cover;
+      }
+      .two-user {
+        background-image: url("{{section.settings.image | asset_url}}");
+        width: 33.3333%;
+        height: 500px;
+        background-size: cover;
+      }
+
+      .three {
+        background-image: url("{{'img3.jpg' | asset_url}}");
+        width: 33.3333%;
+        height: 500px;
+        background-size: cover;
+      }
+      .three-user {
+        background-image: url("{{section.settings.image | asset_url}}");
+        width: 33.3333%;
+        height: 500px;
+        background-size: cover;
+      }
+    
+</style>
+
+{% schema %}
+{
+  "name": "three-images",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "400 x 120px .png recommended"
+    },
+    {
+      "type": "image_picker",
+      "id": "image2",
+      "label": "Image2",
+      "info": "400 x 120px .png recommended"
+    },
+    {
+      "type": "image_picker",
+      "id": "image3",
+      "label": "Image3",
+      "info": "400 x 120px .png recommended"
+    },
+    {
+      "type": "image_picker",
+      "id": "image4",
+      "label": "Image4",
+      "info": "400 x 120px .png recommended"
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "three-images"
+    }
+  ]
+}
+{% endschema %}

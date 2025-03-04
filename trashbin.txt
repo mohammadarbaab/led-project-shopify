@@ -1,4 +1,27 @@
 
+      "settings": {}
+ 
+
+    "tag": "section",
+    "class": "",
+ 
+
+
+<h1>hello world</h1>
+ 
+
+<html>
+  <head>
+    {{ content_for_header }}
+  </head>
+  <body>
+    <main id="main" role="main">
+      {{ content_for_layout }}
+    </main>
+  </body>
+</html>
+ 
+
       slideToMiddle(currentIndex);
  
 texts[currentIndex]
