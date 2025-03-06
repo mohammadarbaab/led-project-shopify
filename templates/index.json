@@ -8,10 +8,10 @@
       "type": "three-images",
       "settings": {}
     },
-    // "more-info": {
-    //   "type": "more-info",
-    //   "settings": {}
-    // },
+    "more-info": {
+      "type": "more-info",
+      "settings": {}
+    },
     // "all-collections": {
     //   "type": "all-collections",
     //   "settings": {}
@@ -23,7 +23,7 @@
   },
   "order": ["banner",
   "three-images",
-  // "more-info",
+  "more-info",
   // "all-collections",
   // "all-products"
 ]
