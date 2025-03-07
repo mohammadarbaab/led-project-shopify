@@ -3,11 +3,57 @@
   <div class="product-container">
     <div class="all-products-wrapper">
       {% for product in collections['nike-air-max'].products %}
-        <h3>{{ product.title | link_to: product.url }}</h3>
+        <div class="products-card">
+          <img
+            width="300"
+            height="300"
+            loading="lazy"
+            src="{{ product.featured_image | image_url }}"
+          >
+          <h3>{{ product.title | link_to: product.url }}</h3>
+        </div>
       {% endfor %}
     </div>
   </div>
 </section>
+
+<style>
+    .all-products{
+        background:{{ section.settings.background }};
+        color:{{ section.settings.text_color }};
+        padding: 10px;
+    }
+    .product-container{
+      position:relative;
+      overflow-x:scroll;
+  }
+  .all-products-wrapper{
+    display:flex;
+    transition:transform 0.3s ease;
+    gap:8px;
+  }
+  .products-card{
+  box-sizing:border-box;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  box-shadow:20px;
+  background: gray;
+  border-radius:20px;
+  
+  }
+  .products-card img{
+  border-radius:20px;
+  }
+  .products-card h3 a {
+    color:white;
+  text-decoration:none;
+  }
+  .products-card a:hover{
+  text-decoration:underline;
+  }
+</style>
 
 {% schema %}
 {

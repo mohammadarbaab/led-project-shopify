@@ -4,11 +4,14 @@
 
     {{ 'theme.css' | asset_url | | stylesheet_tag }}
   </head>
+
   <body>
     {% section 'announcement-bar' %}
     {% section 'header' %}
     <main id="main" role="main">
       {{ content_for_layout }}
     </main>
+
+    {% section 'footer' %}
   </body>
 </html>

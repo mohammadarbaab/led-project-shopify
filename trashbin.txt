@@ -1,3 +1,31 @@
+#FFFFFF
+ 
+
+      {%  %}
+ 
+
+                <p></p>
+ 
+Announcement Bar
+ 
+Navbar
+ 
+
+  color:black;
+ 
+#000
+ 
+
+  border:1px solid black;
+ 
+collection
+ 
+collection-wrapper
+ 
+collection-container
+ 
+all-collections
+ 
 Nike Air Max
  
 Nike Air Max
